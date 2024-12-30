@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.honeycomb-container {
+  --hex-width: 150px;
+  --hex-height: 170px;
+  --hex-margin: 4px;
+}
+
+.hexagon-wrapper {
+  width: var(--hex-width);
+  margin: var(--hex-margin);
+}
+
+.hexagon {
+  position: relative;
+  width: 100%;
+  height: var(--hex-height);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: all 0.3s ease;
+}
+
+
+
+@media (max-width: 640px) {
+  .honeycomb-container {
+    --hex-width: 100px;
+    --hex-height: 100px;
+    --hex-margin: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .honeycomb-container {
+    --hex-width: 100px;
+    --hex-height: 100px;
+  }
+}
+
