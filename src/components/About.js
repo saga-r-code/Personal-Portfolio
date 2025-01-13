@@ -22,7 +22,7 @@ const About = () => {
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              Currently, I'm exploring and learning Backend Development, Devops technologies and how to make production ready code. 
+              Currently, I'm exploring and learning Backend Development and how to make production ready code. 
               Every day is a new opportunity to learn something new, and I believe that with dedication and 
               consistent practice, anyone can become a great developer. Remember, every expert was once a beginner! 
             </p>
@@ -63,7 +63,7 @@ const About = () => {
             {/* Buttons with improved styling */}
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center pt-4">
               <a 
-                href="/resume.pdf" 
+                href="/Sagar_Shah.pdf" 
                 target="_blank"
                 className="w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-blue-500 px-8 py-3 rounded-xl 
                 hover:opacity-90 transition-all duration-300 hover:shadow-[0_0_20px_rgba(52,211,153,0.5)] 
