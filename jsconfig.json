@@ -1,7 +1,11 @@
+/*************  ✨ Codeium Command 🌟  *************/
 {
+  "include": ["next-env.d.ts", "src/**/*"],
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"]
     }
   }
 }
+
+/******  877cfbef-63dc-4ce1-a533-18d49db53926  *******/

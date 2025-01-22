@@ -16,6 +16,7 @@ import {
   SiMariadb,
   SiPostman,
   SiC,
+  SiExpo
 } from "react-icons/si";
 import { BiLogoGit } from "react-icons/bi";
 import { TbBrandCpp } from "react-icons/tb";
@@ -118,6 +119,12 @@ const Skills = () => {
       color: "bg-[#ff713e]",
       textColor: "text-[#ff713e]",
     },
+    {
+      name: "Expo",
+      icon: <SiExpo className="sm:text-4xl md:text-5xl text-3xl" />,
+      color: "bg-[#000020]",
+      textColor: "text-[#000020]",
+    }
   ];
 
   return (
