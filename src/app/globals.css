@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.clock-font {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .honeycomb-container {
   --hex-width: 150px;
@@ -21,8 +33,6 @@
   transition: all 0.3s ease;
 }
 
-
-
 @media (max-width: 640px) {
   .honeycomb-container {
     --hex-width: 100px;
@@ -37,4 +47,3 @@
     --hex-height: 100px;
   }
 }
-

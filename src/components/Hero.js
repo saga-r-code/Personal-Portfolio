@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
@@ -8,11 +8,27 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
 
 const Hero = () => {
+  const [currentTime, setcurrentTime] = useState();
+  useEffect(() => {
+    const result = setInterval(() => {
+      const date = new Date();
+      const hours = date.getHours();
+      const minutes = date.getMinutes();
+      const seconds = date.getSeconds();
+      setcurrentTime(`${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "0" + minutes : minutes}:${seconds < 10 ? "0" + seconds : seconds}`);
+    }, 1000);
+    
+
+    return () => clearInterval(result);
+  }, []);
+
   return (
-    <section className="py-16 md:py-24 lg:py-32 xl:py-40 relative">
-      {/* Matrix-like background decoration */}
-      <div className="absolute inset-0 overflow-hidden opacity-10">
-        <div className="matrix-code"></div>
+    <section className="py-20 md:py-24 lg:py-32 xl:py-40 relative">
+      {/* Clock */}
+      <div className=" h-8 xl:h-14 w-32 lg:w-44 absolute top-5 lg:top-10 xl:left-5">
+          <p className="text-xl xl:text-3xl tracking-widest clock-font  font-semibold text-green-400 font-mycustomefont">
+            {currentTime}
+          </p>
       </div>
 
       <motion.div
@@ -22,7 +38,9 @@ const Hero = () => {
         className="text-center relative z-10"
       >
         <div className="inline-block mb-4 md:mb-6 lg:mb-8 xl:mb-10 px-6 py-2 border border-emerald-500/20 rounded-full bg-emerald-500/5 backdrop-blur-sm">
-          <Link href="#contact" className="text-emerald-400 cursor-pointer">Available for hire</Link>
+          <Link href="#contact" className="text-emerald-400 cursor-pointer">
+            Available for hire
+          </Link>
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -70,7 +88,8 @@ const Hero = () => {
         {/* Social Links */}
         <div className="flex justify-center gap-6 items-center">
           <Link
-            href="https://github.com/saga-r-code" target="_blank"
+            href="https://github.com/saga-r-code"
+            target="_blank"
             className="text-gray-400 hover:text-white transition-colors duration-300"
           >
             <FaGithub size={28} />

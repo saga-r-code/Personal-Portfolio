@@ -7,7 +7,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <footer className="py-8 border-t border-gray-800">
-      <div className="w-full md:w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full xl:w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="mb-4 md:mb-0 tracking-wide">
             <p>© 2024 <a href="https://github.com/saga-r-code" target="_blank" className="text-green-500 font-semibold underline hover:text-green-400">Sagar Shah.</a> All rights reserved.</p>

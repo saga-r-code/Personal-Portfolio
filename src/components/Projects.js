@@ -9,7 +9,7 @@ const Projects = () => {
     {
       title: 'AppNiche Technologies',
       description: 'AppNiche Technologies is a startup venture that provides a wide range of services to help businesses grow and succeed. This startup offers a variety of services, including web development, mobile app development, and digital marketing.',
-      image: '/project-1_1.png',
+      image: '/Images/Project-1.png',
       tech: [
         { name: 'Next.js', icon: <SiNextdotjs className="text-2xl" />, color: 'hover:text-white' },
         { name: 'Tailwind', icon: <SiTailwindcss className="text-2xl" />, color: 'hover:text-cyan-400' },
@@ -21,11 +21,11 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-20">
-      <div className="w-full md:w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16 bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
+      <div className="w-full xl:w-[80%] mx-auto sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16 bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
           Work and Personal Projects
         </h2>
-        <div className="grid p-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid p-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -37,11 +37,12 @@ const Projects = () => {
                   src={project.image}
                   alt={project.title}
                   fill
+                  loading='lazy'
                   className="object-cover  rounded-2xl hover:scale-105 transition-transform duration-500"
                 />
                 <div className='absolute inset-0 bg-black opacity-40 hover:opacity-0 transition-all duration-500' />
               </div>
-              <div className="p-6">
+              <div className="py-6 px-3 md:p-4 lg:p-6 ">
                 <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
                   {project.title}
                 </h3>

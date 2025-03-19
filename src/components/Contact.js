@@ -42,8 +42,8 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20">
-      <div className="w-full md:w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+      <div className="w-full xl:w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16">
           <span className="bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
             Get In Touch
           </span>

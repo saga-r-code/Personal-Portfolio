@@ -4,7 +4,7 @@ import Link from 'next/link'
 const About = () => {
   return (
     <section id="about" className="py-20">
-      <div className="w-full md:w-[80%] mx-auto  sm:px-6 lg:px-8">
+      <div className="w-full xl:w-[80%] mx-auto  sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto space-y-8">
           {/* Heading with decorative elements */}
           <div className="text-center space-y-4">
@@ -60,16 +60,16 @@ const About = () => {
               remember: the most important step is to begin, and you've already taken that step!
             </p>
 
-            {/* Buttons with improved styling */}
+            {/* Resume And Progress Button */}
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center pt-4">
               <a 
-                href="/Sagar_Shah.pdf" 
+                href="/Sagar Shah.pdf" 
                 target="_blank"
                 className="w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-blue-500 px-8 py-3 rounded-xl 
                 hover:opacity-90 transition-all duration-300 hover:shadow-[0_0_20px_rgba(52,211,153,0.5)] 
                 text-center font-medium"
               >
-                Download CV
+                See My Resume
               </a>
               <Link 
                 href="#projects"

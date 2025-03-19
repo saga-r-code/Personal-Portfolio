@@ -129,8 +129,8 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-20 relative">
-      <div className="w-full md:w-[80%] mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <h2 className="text-4xl md:text-5xl font-bold text-center sm:mb-16 mb-10">
+      <div className="w-full xl:w-[80%] mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center sm:mb-16 mb-10">
           <span className="bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
            Skills I Have
           </span>
