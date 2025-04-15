@@ -62,7 +62,7 @@ const About = () => {
 
             {/* Resume And Progress Button */}
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center pt-4">
-              <a 
+              <Link 
                 href="/Sagar Shah.pdf" 
                 target="_blank"
                 className="w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-blue-500 px-8 py-3 rounded-xl 
@@ -70,7 +70,7 @@ const About = () => {
                 text-center font-medium"
               >
                 See My Resume
-              </a>
+              </Link>
               <Link 
                 href="#projects"
                 className="w-full sm:w-auto bg-gray-800/50 px-8 py-3 rounded-xl border border-emerald-500/50

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaWhatsapp, FaInstagram } from 'react-icons/fa'
 
@@ -122,7 +123,7 @@ const Contact = () => {
               </h3>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
-                  <a
+                  <Link
                     key={index}
                     href={info.link}
                     target="_blank"
@@ -138,7 +139,7 @@ const Contact = () => {
                         {info.value}
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
