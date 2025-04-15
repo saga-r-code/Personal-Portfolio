@@ -63,8 +63,9 @@ const About = () => {
             {/* Resume And Progress Button */}
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center pt-4">
               <Link 
-                href="/Sagar Shah.pdf" 
+                href="/SagarShah_Resume.pdf" 
                 target="_blank"
+                // download={true}
                 className="w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-blue-500 px-8 py-3 rounded-xl 
                 hover:opacity-90 transition-all duration-300 hover:shadow-[0_0_20px_rgba(52,211,153,0.5)] 
                 text-center font-medium"
