@@ -150,9 +150,7 @@ const Projects = () => {
 
         {
           name: "Recharts",
-          icon: (
-            <p className="text-sm text-sky-500">{"<ReCharts />"}</p>
-          ),
+          icon: <p className="text-sm text-sky-500">{"<ReCharts />"}</p>,
         },
       ],
       liveLink: "https://expense-tracker-software.vercel.app/",
@@ -184,6 +182,14 @@ const Projects = () => {
         {
           name: "Drizzle ORM",
           icon: <SiDrizzle className="text-green-600 text-2xl" />,
+        },
+        {
+          name: "Neon DB",
+          icon: (
+            <div class="px-2 py-1 text-xs flex justify-center text-green-400 items-center border-green-500/50 rounded-full shadow-green-500/50 shadow-md border ring-1 ring-green-500" >
+              Neon DB
+            </div>
+          ),
         },
       ],
       liveLink: "https://next-big-idea-one.vercel.app/",
@@ -241,7 +247,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className=" relative p-3 bg-gray-900/30 rounded-2xl overflow-hidden hover:transform transition-all duration-500 hover:shadow-[0_0_30px_rgba(52,211,153,0.3)] backdrop-blur-sm border border-emerald-500/20"
+              className=" relative p-3 bg-gray-900/30 rounded-2xl overflow-hidden hover:transform transition-all duration-500 hover:shadow-[0_0_30px_rgba(52,211,153,0.3)] backdrop-blur-sm border border-green-500/20"
             >
               <div className="relative  rounded-2xl h-60">
                 <p className="bg-green-500 rounded-lg px-2 py-1 text-black font-semibold text-sm absolute bottom-2 right-2 z-10">
