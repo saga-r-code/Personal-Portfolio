@@ -186,7 +186,7 @@ const Projects = () => {
         {
           name: "Neon DB",
           icon: (
-            <div class="px-2 py-1 text-xs flex justify-center text-green-400 items-center border-green-500/50 rounded-full shadow-green-500/50 shadow-md border ring-1 ring-green-500" >
+            <div className="px-2 py-1 text-xs flex justify-center text-green-400 items-center border-green-500/50 rounded-full shadow-green-500/50 shadow-md border ring-1 ring-green-500" >
               Neon DB
             </div>
           ),
