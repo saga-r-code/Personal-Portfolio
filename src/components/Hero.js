@@ -3,9 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { AiFillInstagram } from "react-icons/ai";
+
 
 const Hero = () => {
   const [currentTime, setcurrentTime] = useState();
@@ -15,9 +13,12 @@ const Hero = () => {
       const hours = date.getHours();
       const minutes = date.getMinutes();
       const seconds = date.getSeconds();
-      setcurrentTime(`${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "0" + minutes : minutes}:${seconds < 10 ? "0" + seconds : seconds}`);
+      setcurrentTime(
+        `${hours < 10 ? "0" + hours : hours}:${
+          minutes < 10 ? "0" + minutes : minutes
+        }:${seconds < 10 ? "0" + seconds : seconds}`
+      );
     }, 1000);
-    
 
     return () => clearInterval(result);
   }, []);
@@ -26,9 +27,9 @@ const Hero = () => {
     <section className="py-20 md:py-24 lg:py-32 xl:py-40 relative">
       {/* Clock */}
       <div className=" h-8 xl:h-14 w-32 lg:w-44 absolute top-5 lg:top-10 xl:left-5">
-          <p className="text-xl xl:text-3xl tracking-widest clock-font  font-semibold text-green-400 font-mycustomefont">
-            {currentTime}
-          </p>
+        <p className="text-xl xl:text-3xl tracking-widest clock-font  font-semibold text-green-400 font-mycustomefont">
+          {currentTime}
+        </p>
       </div>
 
       <motion.div
@@ -44,7 +45,7 @@ const Hero = () => {
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          <span className="text-gray-100">Hi, I'm </span>
+          <span className="text-gray-100">Hi, I&apos;m </span>
           <span className="text-emerald-400 drop-shadow-[0_0_10px_rgba(52,211,153,0.8)]">
             Sagar Shah
           </span>
@@ -53,12 +54,7 @@ const Hero = () => {
         <h2 className="text-2xl md:text-3xl mb-8 font-mono">
           <span className="text-emerald-400">&lt;</span>
           <TypeAnimation
-            sequence={[
-              "Full Stack Web Developer",
-              2000,
-              "Backend App Developer",
-              2000,
-            ]}
+            sequence={[" Web Developer", 2000, " App Developer", 2000]}
             wrapper="span"
             speed={50}
             repeat={Infinity}
@@ -85,37 +81,7 @@ const Hero = () => {
           </button>
         </div>
 
-        {/* Social Links */}
-        <div className="flex justify-center gap-6 items-center">
-          <Link
-            href="https://github.com/saga-r-code"
-            target="_blank"
-            className="text-gray-400 hover:text-white transition-colors duration-300"
-          >
-            <FaGithub size={28} />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/sagar-shah-a29a77271/"
-            target="_blank"
-            className="text-gray-400 hover:text-blue-600 transition-colors duration-300"
-          >
-            <FaLinkedin size={28} />
-          </Link>
-          <Link
-            href="https://wa.me/+919820938124"
-            target="_blank"
-            className="text-gray-400 hover:text-green-400 transition-colors duration-300"
-          >
-            <IoLogoWhatsapp size={28} />
-          </Link>
-          <Link
-            href="https://www.instagram.com/_sagar__1108"
-            target="_blank"
-            className="text-gray-400 hover:text-pink-400 transition-colors duration-300"
-          >
-            <AiFillInstagram size={28} />
-          </Link>
-        </div>
+      
       </motion.div>
     </section>
   );

@@ -1,7 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { AiFillInstagram } from "react-icons/ai";
+
 import Link from "next/link";
 
 const Footer = () => {
@@ -23,34 +21,39 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex justify-center gap-6 items-center">
-            <Link
-              href="https://github.com/saga-r-code"
-              target="_blank"
-              className="text-gray-400 hover:text-white transition-colors duration-300"
-            >
-              <FaGithub size={28} />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/sagar-shah-a29a77271/"
-              target="_blank"
-              className="text-gray-400 hover:text-blue-600 transition-colors duration-300"
-            >
-              <FaLinkedin size={28} />
-            </Link>
-            <Link
-              href="https://wa.me/+919820938124"
-              target="_blank"
-              className="text-gray-400 hover:text-green-400 transition-colors duration-300"
-            >
-              <IoLogoWhatsapp size={28} />
-            </Link>
-            <Link
-              href="https://www.instagram.com/_sagar__1108"
-              target="_blank"
-              className="text-gray-400 hover:text-pink-400 transition-colors duration-300"
-            >
-              <AiFillInstagram size={28} />
-            </Link>
+            <h5 className="group">
+              <Link href="#about" className="text-gray-300 hover:text-gray-200">
+                About
+                <div className=" h-0.5 w-0 group-hover:w-full transition-all bg-gradient-to-r from-emerald-400 to-blue-500 " />
+              </Link>
+            </h5>
+            <h5 className="group">
+              <Link
+                href="#projects"
+                className="text-gray-300 hover:text-gray-200"
+              >
+                Projects
+              </Link>
+              <div className=" h-0.5 w-0 group-hover:w-full transition-all bg-gradient-to-r from-emerald-400 to-blue-500 " />
+            </h5>
+            <h5 className="group">
+              <Link
+                href="#skills"
+                className="text-gray-300 hover:text-gray-200"
+              >
+                Skills
+              </Link>
+              <div className=" h-0.5 w-0 group-hover:w-full transition-all bg-gradient-to-r from-emerald-400 to-blue-500 " />
+            </h5>
+            <h5 className="group">
+              <Link
+                href="#contact"
+                className="text-gray-300 hover:text-gray-200"
+              >
+                Contact
+              </Link>
+              <div className=" h-0.5 w-0 group-hover:w-full transition-all bg-gradient-to-r from-emerald-400 to-blue-500 " />
+            </h5>
           </div>
         </div>
       </div>

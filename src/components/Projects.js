@@ -128,7 +128,7 @@ const Projects = () => {
       description:
         "A simple and responsive web app to track daily income and expenses with real-time balance updates.It helps users stay on top of their finances through clean input forms and categorized transaction history.",
       image: "/Images/project-6.png",
-      badge: "personal",
+      badge: "Personal",
       type: "Web App",
       tech: [
         {
@@ -160,7 +160,7 @@ const Projects = () => {
       description:
         "A modern web app where users can drop their creative ideas anonymously — no login required. Includes features like creating ideas, real-time idea listing, and like/unlike functionality.",
       image: "/Images/project-7.png",
-      badge: "personal",
+      badge: "Personal",
       type: "Web App",
       tech: [
         {
@@ -186,7 +186,7 @@ const Projects = () => {
         {
           name: "Neon DB",
           icon: (
-            <div className="px-2 py-1 text-xs flex justify-center text-green-400 items-center border-green-500/50 rounded-full shadow-green-500/50 shadow-md border ring-1 ring-green-500" >
+            <div className="px-2 py-1 text-xs flex justify-center text-green-400 items-center border-green-500/50 rounded-full shadow-green-500/50 shadow-md border ring-1 ring-green-500">
               Neon DB
             </div>
           ),
@@ -199,7 +199,7 @@ const Projects = () => {
       description:
         "A comprehensive web app to manage student attendance, track daily presence, and generate detailed reports and attendance graphs.Perfect for educational institutions to visualize attendance data in real-time.",
       image: "/Images/project-8.png",
-      badge: "personal",
+      badge: "Personal",
       type: "Web App",
       tech: [
         {
@@ -239,10 +239,13 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20">
       <div className="w-full mx-auto container">
-        {/* <div className="w-full xl:w-[95%] 2xl:[80%] mx-auto sm:px-6 lg:px-8"> */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16 bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
-          Work and Personal Projects
-        </h2>
+        <div className="text-center space-y-4 group mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center  bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
+            Work and Personal Projects
+          </h2>
+          <div className=" h-1 w-0 group-hover:w-1/4 transition-all bg-gradient-to-r from-emerald-400 to-blue-500 mx-auto rounded-full" />
+        </div>
+
         <div className="grid p-1 md:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-5">
           {projects.map((project, index) => (
             <div
