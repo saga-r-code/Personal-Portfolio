@@ -15,7 +15,7 @@ const Page = () => {
   return (
     <main className="relative w-screen overflow-auto min-h-screen bg-[#0a0a0a] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(52,211,153,0.15),rgba(255,255,255,0))] text-white">
       {/* Social Links */}
-      <div className="fixed right-10 top-1/2 transform -translate-y-1/2 z-50">
+      <div className="hidden md:fixed right-10 top-1/2 transform -translate-y-1/2 z-50">
         <div className="flex flex-col justify-center space-y-12 items-center">
           <Link
             href="https://github.com/saga-r-code"
